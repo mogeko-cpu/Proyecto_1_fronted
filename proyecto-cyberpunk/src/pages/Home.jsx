@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import BackgroundCarousel from "../components/BackgroundCarousel";
 
-// 👇 AQUÍ PONES TUS GIFS - Reemplaza "nombre-de-tu-gif.gif" con el nombre real
+
 const backgroundGifs = [
   {
     src: "/gifs/g1.gif",   // ← Primer GIF
@@ -31,12 +31,11 @@ const Home = () => {
         </div>
         
         <h1 className="text-5xl md:text-7xl font-bold text-cyber-neon mb-4 animate-pulse">
-          Cyberpunk Explorer
+          Rick And Morty Multiverse Explorer
         </h1>
         
         <p className="text-xl md:text-2xl text-cyber-pink mb-8 max-w-2xl">
-          Explora personajes del multiverso, descubre mundos distópicos 
-          y guarda tus favoritos en la red
+          Explora personajes del multiverso de Rick y Morty.
         </p>
         
         <div className="flex gap-4 justify-center flex-wrap">
