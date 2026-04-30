@@ -31,7 +31,7 @@ const Home = () => {
         </div>
         
         <h1 className="text-5xl md:text-7xl font-bold text-cyber-neon mb-4 animate-pulse">
-          Rick And Morty Multiverse Explorer
+          Rick And Morty Multiverse
         </h1>
         
         <p className="text-xl md:text-2xl text-cyber-pink mb-8 max-w-2xl">

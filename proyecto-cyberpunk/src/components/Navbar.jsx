@@ -11,7 +11,7 @@ const Navbar = () => {
             <path d="M2 17L12 22L22 17" stroke="#ff00cc" strokeWidth="2" fill="none"/>
             <path d="M2 12L12 17L22 12" stroke="#6600ff" strokeWidth="2" fill="none"/>
           </svg>
-          <span className="text-cyber-neon font-bold text-xl">Cyberpunk App</span>
+          <span className="text-cyber-neon font-bold text-xl">Rick And Morty</span>
         </div>
         
         <div className="flex gap-4">
