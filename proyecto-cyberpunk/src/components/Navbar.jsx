@@ -28,7 +28,7 @@ const Navbar = () => {
           <NavLink to="/favorites" className={({ isActive }) => 
             isActive ? "text-cyber-pink" : "text-cyber-neon hover:text-cyber-pink"
           } aria-label="Favoritos">
-            Favoritos ❤️
+            Favoritos
           </NavLink>
           <NavLink to="/contact" className={({ isActive }) => 
             isActive ? "text-cyber-pink" : "text-cyber-neon hover:text-cyber-pink"

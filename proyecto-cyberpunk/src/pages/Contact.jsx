@@ -190,22 +190,13 @@ const Contact = () => {
           }`}
           aria-label="Enviar mensaje"
         >
-          {isFormValid() ? "🚀 Enviar mensaje" : "🔒 Completa todos los campos"}
+          {isFormValid() ? "Enviar mensaje" : "🔒 Completa todos los campos"}
         </button>
       </form>
 
       {/* 🔴 DARK PATTERN INTENCIONAL - Modal de confirmación innecesario */}
       {/* 
-        COMENTARIO EXPLICATIVO:
-        Este modal viola principios de UX ética porque:
-        1. Añade una fricción innecesaria al proceso de envío
-        2. El usuario ya completó el formulario y espera envío directo
-        3. Crea duda artificial sobre la decisión del usuario
-        4. Similar a patrones oscuros usados para evitar cancelaciones de suscripción
-        
-        En una aplicación bien diseñada, el formulario se enviaría directamente
-        tras la validación, sin este paso adicional de confirmación.
-      */}
+        c*/}
       <dialog 
         ref={modalRef} 
         className="bg-gradient-to-r from-red-900 to-black border-4 border-red-600 rounded-lg p-8 backdrop:bg-black/80"
@@ -216,7 +207,7 @@ const Contact = () => {
             ¿ESTÁS SEGURO DE ENVIAR ESTE MENSAJE?
           </p>
           <p className="text-gray-400 text-sm mb-6">
-            (Este mensaje es 100% real y no podrás recuperarlo)
+            (No podras editarlo una vez lo envies)
           </p>
           <div className="flex justify-center gap-4">
             <button
@@ -224,14 +215,14 @@ const Contact = () => {
               className="px-6 py-2 bg-gray-700 text-white rounded hover:bg-gray-600 font-bold"
               aria-label="Cancelar envío"
             >
-              😰 No, mejor no
+              No, mejor no
             </button>
             <button
               onClick={confirmSend}
               className="px-6 py-2 bg-red-600 text-white rounded hover:bg-red-500 font-bold animate-pulse"
               aria-label="Confirmar envío"
             >
-              😈 Sí, enviar de todas formas
+               Sí, enviar de todas formas
             </button>
           </div>
           <p className="text-red-400 text-xs mt-4">
